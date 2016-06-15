@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tanim.ibrar.fingergesture.MainActivity">
+
+
+
+    <ToggleButton
+        android:id="@+id/tglMusicOnOff"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/loop_music_on_off_selector"
+        android:checked="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textOff=""
+        android:textOn="" />
+
+
+
+    <LinearLayout
+        android:id="@+id/fling_space_ll"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"></LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_animation_finger_usercreate"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffefe3ef"
+        android:padding="10dp">
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/tuched_border"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"></LinearLayout>
+
+        <ImageView
+            android:id="@+id/animation_finger_usercreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/finger_image_new" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:text="Swipe Left to Right"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ff82358b" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
